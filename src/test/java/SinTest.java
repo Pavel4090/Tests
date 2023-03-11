@@ -2,12 +2,12 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class SinTest extends BaseTest{
+public class SinTest extends BaseTest {
 
     @Test(dataProvider = "dataForSin")
     public void sinCalc(double a, double b) {
         double sin = calculator.sin(a);
-        System.out.println(sin);
+        System.out.printf("Sinus %s is:" + sin + "\n", a);
         Assert.assertEquals(b, sin, "invalid result");
     }
 

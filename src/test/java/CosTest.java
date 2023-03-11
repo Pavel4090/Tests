@@ -7,7 +7,7 @@ public class CosTest extends BaseTest{
     @Test(dataProvider = "dataForCos")
     public void cosCalc(double a, double b) {
         double cos = calculator.cos(a);
-        System.out.println(cos);
+        System.out.printf("Cosines of %s is: " + cos + "\n", a);
         Assert.assertEquals(b, cos, "invalid result");
     }
 

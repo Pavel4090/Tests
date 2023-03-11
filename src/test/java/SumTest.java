@@ -7,6 +7,7 @@ public class SumTest extends BaseTest{
     @Test(dataProvider = "dataForSum")
     public void trueSum(int a, int b, int c) {
         int sum = calculator.sum(a, b);
+        System.out.printf("Summa %s and %s is: " + sum + "\n", a, b);
         Assert.assertEquals(c, sum);
     }
 

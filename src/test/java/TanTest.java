@@ -7,7 +7,7 @@ public class TanTest extends BaseTest{
     @Test(dataProvider = "dataForTan")
     public void tanCalc(double a, double b) {
         double tan = calculator.tan(a);
-        System.out.println(tan);
+        System.out.printf("Tangents %s is: " + tan + "\n", a);
         Assert.assertEquals(b, tan, "invalid result");
     }
 

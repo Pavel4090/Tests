@@ -6,9 +6,9 @@ public class MultiplicationTest extends BaseTest{
 
     @Test(dataProvider = "dataForMultiplication")
     public void multiplicationCalc(int a, int b, int c) {
-        double mult = calculator.multiplication(a, b);
-        System.out.println(mult);
-        Assert.assertEquals(c, mult, "invalid result");
+        double multi = calculator.multiplication(a, b);
+        System.out.printf("Multiplication %s on %s is: " + multi + "\n", a, b);
+        Assert.assertEquals(c, multi, "invalid result");
     }
 
     @DataProvider(name = "dataForMultiplication")

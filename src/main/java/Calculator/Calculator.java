@@ -19,7 +19,7 @@ public class Calculator implements ICalculator{
     @Override
     public int division(int a, int b) throws IllegalArgumentException {
         if (b == 0) {
-            throw new IllegalArgumentException("Error: Division by zero!");
+            throw new IllegalArgumentException(new Exception("ERROR: division by zero"));
         }
         return a / b;
     }
@@ -47,4 +47,29 @@ public class Calculator implements ICalculator{
         double tan = Math.tan(a);
         return Math.round(tan * 100) / 100.0;
     }
+
+    @Override
+    public boolean negativeNumber(double a) {
+        return a < 0;
+    }
+
+    @Override
+    public boolean positiveNumber(double a) {
+        return a > 0;
+    }
+
+    @Override
+    public double powNumber(double a, int b) {
+        return Math.pow(a, b);
+    }
+
+    @Override
+    public double factorial(int a) {
+        int result = 1;
+        for (int i = 1; i <= a; i++) {
+            result = result * i;
+        }
+        return result;
+    }
+
 }

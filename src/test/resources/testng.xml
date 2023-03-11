@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" name="Test suite" parallel="classes">
+    <test name="Test1">
+        <classes>
+            <class name="CosTest"/>
+        </classes>
+    </test>
+    <test name="Test2">
+        <classes>
+            <class name="DivisionTest"/>
+        </classes>
+    </test>
+    <test name="Test3">
+        <classes>
+            <class name="FactorialTest"/>
+        </classes>
+    </test>
+    <test name="Test4">
+        <classes>
+            <class name="NegativeNumberTest"/>
+        </classes>
+    </test>
+    <test name="Test5">
+        <classes>
+            <class name="PowTest"/>
+        </classes>
+    </test>
+    <test name="Test6">
+        <classes>
+            <class name="PositiveNumberTest"/>
+        </classes>
+    </test>
+</suite>
