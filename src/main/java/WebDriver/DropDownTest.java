@@ -11,7 +11,7 @@ import java.util.List;
 public class DropDownTest extends BaseTest {
 
     @Test
-    public void DropDown() {
+    public void dropDown() {
         driver.get("https://the-internet.herokuapp.com/dropdown");
         WebElement element = driver.findElement(By.id("dropdown"));
         Select select = new Select(element);

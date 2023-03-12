@@ -12,7 +12,7 @@ import java.time.Duration;
 public class DynamicControlsTest extends BaseTest {
 
     @Test
-    public void RemoveCheckbox() {
+    public void removeCheckbox() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
         driver.findElement(By.id("checkbox"));
@@ -24,7 +24,7 @@ public class DynamicControlsTest extends BaseTest {
     }
 
     @Test
-    public void EnableInput() {
+    public void enableInput() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
         driver.findElement(By.cssSelector("[type='text']"));

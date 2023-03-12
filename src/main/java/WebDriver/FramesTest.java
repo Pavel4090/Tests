@@ -10,7 +10,7 @@ public class FramesTest extends BaseTest{
     String text = "Your content goes here.";
 
     @Test
-    public void Frames() {
+    public void frames() {
         driver.get("https://the-internet.herokuapp.com/iframe");
         driver.switchTo().frame("mce_0_ifr");
         WebElement textInsideParagraph = driver.findElement(By.xpath("//p[text()='Your content goes here.']"));

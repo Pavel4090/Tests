@@ -10,7 +10,7 @@ import java.util.List;
 public class CheckBoxesTest extends BaseTest {
 
     @Test
-    public void CheckedUnchecked() {
+    public void checkedUnchecked() {
         driver.get("https://the-internet.herokuapp.com/checkboxes");
         List<WebElement> element = driver.findElements(By.cssSelector("[type='checkbox']"));
         WebElement firstCheckbox = element.get(0);
